@@ -99,8 +99,8 @@ export function Originals() {
       >
         {/* LED studio glow */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -left-[10%] top-[10%] h-[80%] w-[60%] rounded-full bg-led-violet opacity-40 blur-[140px] motion-safe:animate-[ledA_9s_ease-in-out_infinite_alternate]" />
-          <div className="absolute -right-[10%] bottom-[-10%] h-[80%] w-[60%] rounded-full bg-led-magenta opacity-35 blur-[150px] motion-safe:animate-[ledB_11s_ease-in-out_infinite_alternate]" />
+          <div className="absolute -left-[10%] top-[10%] h-[80%] w-[60%] rounded-full bg-led-violet opacity-40 blur-[70px] md:blur-[140px] md:motion-safe:animate-[ledA_9s_ease-in-out_infinite_alternate]" />
+          <div className="absolute -right-[10%] bottom-[-10%] h-[80%] w-[60%] rounded-full bg-led-magenta opacity-35 blur-[70px] md:blur-[150px] md:motion-safe:animate-[ledB_11s_ease-in-out_infinite_alternate]" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,#07040d_85%)]" />
           <style>{`@keyframes ledA{to{transform:translate(12%,8%) scale(1.15)}}@keyframes ledB{to{transform:translate(-10%,-6%) scale(1.1)}}`}</style>
         </div>

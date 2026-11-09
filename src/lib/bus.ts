@@ -52,3 +52,14 @@ export const lowData = () => {
   const c = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
   return !!c && (c.saveData === true || /(^|-)2g$/.test(c.effectiveType || ''));
 };
+
+/**
+ * Apple WebKit (Safari, and every browser on iPhone/iPad). It decodes H.264 in
+ * hardware but VP9 often in software, so we hand it MP4 first.
+ */
+export const preferMp4 = () => {
+  if (typeof navigator === 'undefined') return false;
+  const ua = navigator.userAgent;
+  const iOS = /iP(hone|ad|od)/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  return iOS || (/Safari\//.test(ua) && !/Chrome|Chromium|CriOS|Edg|OPR|Android/.test(ua));
+};

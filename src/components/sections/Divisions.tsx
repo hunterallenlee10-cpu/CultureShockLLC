@@ -29,7 +29,7 @@ export function Divisions({ stills = {} }: { stills?: Record<string, React.React
         </header>
 
         {/* Desktop: expanding panels */}
-        <div className="hidden h-[min(78vh,760px)] gap-3 md:flex" onPointerLeave={() => setActive(null)}>
+        <div className="hidden h-[min(78vh,760px)] gap-3 lg:flex" onPointerLeave={() => setActive(null)}>
           {divisions.map((d, i) => {
             const on = active === i;
             return (
@@ -107,7 +107,7 @@ export function Divisions({ stills = {} }: { stills?: Record<string, React.React
         </div>
 
         {/* Mobile: accordion */}
-        <div className="flex flex-col gap-3 md:hidden">
+        <div className="flex flex-col gap-3 lg:hidden">
           {divisions.map((d, i) => {
             const on = open === i;
             return (

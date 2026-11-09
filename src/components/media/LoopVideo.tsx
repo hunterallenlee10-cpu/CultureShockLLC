@@ -1,7 +1,7 @@
 'use client';
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { cmedia, type LoopEntry } from '@/lib/media-client';
-import { lowData, prefersReducedMotion } from '@/lib/bus';
+import { lowData, preferMp4, prefersReducedMotion } from '@/lib/bus';
 
 /* ------------------------------------------------------------------------
  * Playback budget: at most N loops per group play at once (oldest yields).
@@ -146,8 +146,10 @@ export const LoopVideo = forwardRef<LoopVideoHandle, Props>(function LoopVideo(
       width={entry.width}
       height={entry.height}
     >
-      {load && <source src={entry.webm} type="video/webm" />}
-      {load && <source src={entry.mp4} type="video/mp4" />}
+      {load &&
+        (preferMp4()
+          ? [<source key="m" src={entry.mp4} type="video/mp4" />, <source key="w" src={entry.webm} type="video/webm" />]
+          : [<source key="w" src={entry.webm} type="video/webm" />, <source key="m" src={entry.mp4} type="video/mp4" />])}
     </video>
   );
 });

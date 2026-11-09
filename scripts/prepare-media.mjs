@@ -105,12 +105,13 @@ const HERO_SEGMENTS = [
 ];
 /** 9:16 mobile hero: [key, start, end]. Only Culture Shock's own footage (no third-party clips). */
 const MOBILE_HERO_SEGMENTS = [
+  // Caption-free footage only: burned-in captions collide with the hero headline.
   ['reel-35', 0.2, 3.0], // walk-out through the smoke
-  ['reel-05', 8.5, 10.5], // the violet LED studio
-  ['reel-35', 13.0, 15.4],
-  ['reel-11', 7.5, 9.5], // the magenta LED studio
+  ['reel-23', 14.55, 16.8], // tunnel performance shot (centre-cropped to 9:16)
+  ['reel-35', 13.0, 15.4], // open-field run
+  ['reel-23', 24.5, 26.6], // "Home Sweet Home" athlete shoot
   ['reel-35', 9.1, 11.4], // athlete close-up
-  ['reel-35', 19.0, 21.0],
+  ['reel-23', 59.05, 60.5], // helmet close-up
   ['reel-35', 32.0, 34.5],
 ];
 
@@ -814,7 +815,8 @@ async function stageHero(vids, index) {
   const mobileChain = (key) => {
     const chain = fixChain(key);
     const f = FIX[key];
-    if (f?.transpose) chain.push('crop=ih*9/16:ih');
+    // Landscape sources (rotated football clips, the 2024 reel) are centre-cropped to 9:16.
+    if (f?.transpose || key === 'reel-23') chain.push('crop=ih*9/16:ih');
     chain.push('scale=540:960:flags=lanczos');
     return chain.join(',');
   };

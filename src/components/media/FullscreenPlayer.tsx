@@ -29,6 +29,10 @@ export function FullscreenPlayer() {
     opener.current = document.activeElement as HTMLElement;
     window.__lenis?.stop();
     document.body.style.overflow = 'hidden';
+    // Show the normal system cursor over the player controls (the custom one is hidden here).
+    const root = document.documentElement;
+    const hadCursor = root.classList.contains('has-cursor');
+    root.classList.remove('has-cursor');
     store.cursor.set({ mode: 'hidden' });
     closeBtn.current?.focus();
     const el = v.current;
@@ -45,6 +49,7 @@ export function FullscreenPlayer() {
       window.__lenis?.start();
       document.body.style.overflow = '';
       store.cursor.set({ mode: 'default' });
+      if (hadCursor) root.classList.add('has-cursor');
       opener.current?.focus?.();
     };
   }, [item]);

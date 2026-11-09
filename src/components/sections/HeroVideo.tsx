@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { cmedia } from '@/lib/media-client';
-import { lowData, prefersReducedMotion, store } from '@/lib/bus';
+import { lowData, preferMp4, prefersReducedMotion, store } from '@/lib/bus';
 
 const VERT = /* glsl */ `
 attribute vec2 uv;
@@ -59,7 +59,7 @@ void main() {
 function pickSrc() {
   const mobile = window.matchMedia('(max-width: 767px) and (orientation: portrait)').matches;
   const v = document.createElement('video');
-  const webm = v.canPlayType('video/webm; codecs="vp9"') === 'probably' || v.canPlayType('video/webm; codecs="vp9"') === 'maybe';
+  const webm = !preferMp4() && v.canPlayType('video/webm; codecs="vp9"') !== '';
   const ext = webm ? 'webm' : 'mp4';
   if (mobile) return { src: cmedia.hero.mobile[`hero-mobile.${ext}`], w: 540, h: 960 };
   const big = window.innerWidth * Math.min(window.devicePixelRatio, 2) > 1100;

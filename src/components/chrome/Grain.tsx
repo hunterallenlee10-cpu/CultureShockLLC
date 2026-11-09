@@ -23,7 +23,8 @@ export function Grain() {
       <div
         ref={ref}
         aria-hidden
-        className="pointer-events-none fixed -inset-[50%] z-[60] opacity-[0.05] mix-blend-overlay motion-safe:animate-[grain_0.9s_steps(6)_infinite]"
+        // Normal blending (a full-screen blend mode re-composites every frame); animated only with a fine pointer.
+        className="pointer-events-none fixed -inset-[20%] z-[60] opacity-[0.045] [@media(pointer:fine)]:motion-safe:animate-[grain_0.9s_steps(6)_infinite]"
         style={{ backgroundSize: '160px 160px' }}
       />
       <div aria-hidden className="scanlines pointer-events-none fixed inset-0 z-[59] opacity-60" />

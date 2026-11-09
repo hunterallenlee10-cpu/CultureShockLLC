@@ -95,7 +95,9 @@ export function Hud() {
   return (
     <>
       <header
-        className={`pointer-events-none fixed inset-x-0 top-0 z-[70] flex items-start justify-between px-[var(--gutter)] pt-4 transition-colors duration-300 ${color}`}
+        className={`pointer-events-none fixed inset-x-0 top-0 z-[70] flex items-start justify-between px-[var(--gutter)] pt-4 pb-6 transition-colors duration-300 ${color} ${
+          onGold ? '' : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent'
+        }`}
       >
         <div className="pointer-events-auto flex items-center gap-4">
           <Link
@@ -152,7 +154,9 @@ export function Hud() {
       </header>
 
       <div
-        className={`pointer-events-none fixed inset-x-0 bottom-0 z-[70] flex items-end justify-between px-[var(--gutter)] pb-4 transition-colors duration-300 ${color}`}
+        className={`pointer-events-none fixed inset-x-0 bottom-0 z-[70] hidden items-end justify-between px-[var(--gutter)] pt-8 pb-4 transition-colors duration-300 md:flex ${color} ${
+          onGold ? '' : 'bg-gradient-to-t from-black/70 to-transparent'
+        }`}
       >
         <p className="mono text-[11px] tracking-[0.12em]">
           DMV <span className="text-gold">•</span> AVAILABLE FOR TRAVEL

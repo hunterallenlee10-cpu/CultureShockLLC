@@ -16,7 +16,8 @@ export function SmoothScroll() {
     const reduce = prefersReducedMotion();
     let lenis: Lenis | undefined;
     if (!reduce) {
-      lenis = new Lenis({ lerp: 0.11, wheelMultiplier: 1, touchMultiplier: 1.2, anchors: { offset: 0 } });
+      // allowNestedScroll: trackpad swipes over the horizontal rows scroll those rows, not the page.
+      lenis = new Lenis({ lerp: 0.11, wheelMultiplier: 1, touchMultiplier: 1.2, anchors: { offset: 0 }, allowNestedScroll: true });
       window.__lenis = lenis;
       lenis.on('scroll', ScrollTrigger.update);
     }
