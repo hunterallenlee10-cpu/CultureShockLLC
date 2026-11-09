@@ -4,6 +4,8 @@ Spec site for **Culture Shock**, a DMV multimedia production company. The whole 
 
 Every image and video comes from Culture Shock’s own Instagram posts and story highlights. All copy comes from their captions and highlight cards. Nothing is stock, invented, or placeholder. Anything the captions don’t confirm is marked `TODO: confirm with client` and shows up as a dashed gold flag on the page.
 
+**Live:** https://culture-shock-on-air.vercel.app (Vercel project `culture-shock-on-air`, team “leu”). Every push to `claude/inspiring-wright-sod201`, currently the production branch, redeploys automatically. `NEXT_PUBLIC_SITE_URL` is set to the live URL; update it when a custom domain is added.
+
 **Stack:** Next.js 15 (App Router) · TypeScript · Tailwind v4 · GSAP (ScrollTrigger, Flip) · Lenis · OGL (one WebGL canvas) · Resend.
 
 ```bash
@@ -145,5 +147,5 @@ node scripts/screenshots.mjs        # → qa/screens/{desktop,mobile}/*.png at 1
 - [ ] **Budget ranges** in the form (`site.ts → contact.budgets`) are placeholders. Set real bands.
 - [ ] **Case-study details** flagged `TODO:` in `projects.ts` (venues, dates, crew, deliverables).
 - [ ] **Business address / region** for JSON-LD (`app/page.tsx`, currently `addressRegion: MD`).
-- [ ] **Domain**: set `NEXT_PUBLIC_SITE_URL`.
+- [ ] **Custom domain**: add it in Vercel, then update `NEXT_PUBLIC_SITE_URL` (currently the vercel.app URL).
 - [ ] **Full-length cuts**: upload to Vercel Blob (above) and set `NEXT_PUBLIC_MEDIA_BLOB_BASE`.
