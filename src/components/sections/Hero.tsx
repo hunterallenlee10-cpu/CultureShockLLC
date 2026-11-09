@@ -55,11 +55,17 @@ export function Hero() {
         imageSizes="100vw"
         fetchPriority="high"
       />
+      {/* 2px short of full-bleed: Chrome ignores viewport-filling images as LCP candidates. */}
       <picture>
         <source media={MOBILE} type="image/avif" srcSet={srcset(m, 'avif')} sizes="100vw" />
         <source media={MOBILE} type="image/webp" srcSet={srcset(m, 'webp')} sizes="100vw" />
         <source type="image/avif" srcSet={srcset(d, 'avif')} sizes="100vw" />
-        <img {...fallback} srcSet={srcset(d, 'webp')} alt="" className="absolute inset-0 h-full w-full object-cover opacity-80" />
+        <img
+          {...fallback}
+          srcSet={srcset(d, 'webp')}
+          alt=""
+          className="absolute inset-x-0 top-0 h-[calc(100%-2px)] w-full object-cover opacity-80"
+        />
       </picture>
       <HeroVideo />
 

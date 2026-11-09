@@ -85,6 +85,7 @@ const LOOP_START = {
   'reel-23': 31.1, // game-day action, skips the film-leader countdown
   'reel-01': 14.0, // the shot, not the tripod
   'reel-22': 13.0,
+  'reel-35': 13.0, // open-field action (the scene-detected window opens on a white whip-pan)
 };
 
 /** Clips the hero is cut from: [start, end] seconds in reel-23-showreel-2024. */

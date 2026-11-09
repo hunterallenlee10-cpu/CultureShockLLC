@@ -12,13 +12,14 @@ import './globals.css';
 
 const barlow = Barlow_Condensed({
   subsets: ['latin'],
-  weight: ['600', '700', '800', '900'],
-  style: ['normal', 'italic'],
+  // Display type is always italic: 900 headlines, 800 sub-heads/buttons, 700 tracked taglines.
+  weight: ['700', '800', '900'],
+  style: ['italic'],
   variable: '--font-barlow',
   display: 'swap',
 });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const mono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-jetbrains', display: 'swap' });
+const mono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-jetbrains', display: 'swap', preload: false });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

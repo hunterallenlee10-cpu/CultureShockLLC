@@ -85,7 +85,7 @@ export function Proof() {
                   </div>
                 ) : (
                   <div className={r.quote.length > 300 ? '' : 'my-auto'}>
-                    <p className="text-gold" aria-label="5 out of 5 stars">
+                    <p className="text-gold" role="img" aria-label="5 out of 5 stars">
                       <span aria-hidden className="text-[22px] tracking-[0.15em]">
                         ★★★★★
                       </span>

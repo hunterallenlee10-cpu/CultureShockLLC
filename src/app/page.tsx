@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Hero } from '@/components/sections/Hero';
 import { Ticker } from '@/components/sections/Ticker';
 import { Manifesto } from '@/components/sections/Manifesto';
@@ -113,43 +114,67 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd()).replace(/</g, '\\u003c') }} />
       <Hero />
-      <Ticker />
-      <Manifesto />
-      <Divisions
-        stills={Object.fromEntries(
-          divisions
-            .flatMap((d) => d.stills)
-            .map((k) => [
-              k,
-              <Picture key={k} k={k} alt={photoAlts[k] ?? '378 Coaching brand photoshoot'} fill sizes="200px" className="object-cover" />,
-            ]),
-        )}
-      />
-      <Originals />
-      <Work
-        images={Object.fromEntries(
-          projects
-            .filter((p) => p.tileImage)
-            .map((p) => [
-              p.slug,
-              <Picture
-                key={p.slug}
-                k={p.tileImage!}
-                alt={p.alt}
-                fill
-                sizes={p.tile === 'P' ? '(min-width: 768px) 25vw, 50vw' : '(min-width: 768px) 50vw, 100vw'}
-                className="object-cover"
-              />,
-            ]),
-        )}
-      />
-      <Sports />
-      <Proof />
-      <Founder />
-      <Bts />
-      <TravelMap background={<Picture k="photo-19-08" alt="" fill sizes="100vw" className="object-cover opacity-30" />} />
-      <Join />
-      <Contact />
+      <Suspense>
+        <Ticker />
+      </Suspense>
+      <Suspense>
+        <Manifesto />
+      </Suspense>
+      <Suspense>
+        <Divisions
+          stills={Object.fromEntries(
+            divisions
+              .flatMap((d) => d.stills)
+              .map((k) => [
+                k,
+                <Picture key={k} k={k} alt={photoAlts[k] ?? '378 Coaching brand photoshoot'} fill sizes="200px" className="object-cover" />,
+              ]),
+          )}
+        />
+      </Suspense>
+      <Suspense>
+        <Originals />
+      </Suspense>
+      <Suspense>
+        <Work
+          images={Object.fromEntries(
+            projects
+              .filter((p) => p.tileImage)
+              .map((p) => [
+                p.slug,
+                <Picture
+                  key={p.slug}
+                  k={p.tileImage!}
+                  alt={p.alt}
+                  fill
+                  sizes={p.tile === 'P' ? '(min-width: 768px) 25vw, 50vw' : '(min-width: 768px) 50vw, 100vw'}
+                  className="object-cover"
+                />,
+              ]),
+          )}
+        />
+      </Suspense>
+      <Suspense>
+        <Sports />
+      </Suspense>
+      <Suspense>
+        <Proof />
+      </Suspense>
+      <Suspense>
+        <Founder />
+      </Suspense>
+      <Suspense>
+        <Bts />
+      </Suspense>
+      <Suspense>
+        <TravelMap background={<Picture k="photo-19-08" alt="" fill sizes="100vw" className="object-cover opacity-30" />} />
+      </Suspense>
+      <Suspense>
+        <Join />
+      </Suspense>
+      <Suspense>
+        <Contact />
+      </Suspense>
       <Footer />
     </>
   );

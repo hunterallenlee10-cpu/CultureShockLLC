@@ -65,7 +65,7 @@ Stages: `images, logo, textures, loops, clips, stills, cuts, hero, full, index`.
 
 ### Budget
 
-`public/media` ≈ 106 MB (budget 120 MB): images 29 MB, loops 54 MB, hero 12 MB, 2024 reel ~12 MB, brand 0.4 MB. The other full-length cuts are ~300 MB, so they live on **Vercel Blob**:
+`public/media` ≈ 109 MB (budget 120 MB): images 29 MB, loops 54 MB, hero 12 MB, the 2024 reel 16 MB (MP4 only), brand 0.4 MB. The other full-length cuts (MP4 + WebM) total about 929 MB (worth re-encoding lighter before uploading if Blob bandwidth matters), so they live on **Vercel Blob**:
 
 ```bash
 BLOB_READ_WRITE_TOKEN=… node scripts/upload-blob.mjs
@@ -106,6 +106,17 @@ To add a project, add its media to the asset pack, re-run `npm run media`, then 
 - **SEO:** metadata, OG image (`app/opengraph-image.tsx`: wordmark + their brush slashes), JSON-LD `LocalBusiness` (areaServed DC/MD/VA), `VideoObject` (2024 reel + each Original), `Person` (founder), `CreativeWork` per case study, sitemap and robots.
 
 ## QA
+
+Measured on the production build (`next start`, local):
+
+| | Performance | Accessibility | Best practices | SEO | LCP | CLS |
+|---|---|---|---|---|---|---|
+| Lighthouse desktop | 98 | 100 | 100 | 100 | 0.9 s | 0 |
+| Lighthouse mobile (simulated slow 4G) | ~70 | 100 | 100 | 100 | 4.7 s (simulated) | 0 |
+| Mobile, applied 4G throttling (devtools) | — | — | — | — | **1.9 s** | 0 |
+
+The hero poster is the LCP element (observed at ~0.2 s unthrottled). Lighthouse’s *simulated* mobile LCP counts every JS chunk requested before that paint as a dependency, so it reads much worse than the applied-throttling run. **The mobile ≥ 90 target is not met yet.** The next levers: trim GSAP from the initial bundle (load ScrollTrigger/Flip per section), lazy-hydrate the below-the-fold sections, and drop the Inter webfont for the system stack.
+
 
 ```bash
 npm run build && npm start

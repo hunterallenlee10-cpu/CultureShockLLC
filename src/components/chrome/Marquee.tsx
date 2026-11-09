@@ -26,13 +26,16 @@ export function Marquee({
     let visible = true;
     const io = new IntersectionObserver(([e]) => (visible = e.isIntersecting));
     io.observe(el);
+    // Cache the track width (reading scrollWidth every frame forces layout).
+    let half = el.scrollWidth / 2;
+    const ro = new ResizeObserver(() => (half = el.scrollWidth / 2));
+    ro.observe(el);
     const tick = (_t: number, dt: number) => {
       if (!visible) return;
       const v = store.velocity.current;
       if (Math.abs(v) > 0.5) dir = (v > 0 ? -1 : 1) * (reverse ? -1 : 1);
       const boost = 1 + Math.min(8, Math.abs(v) * 0.35);
       x += dir * speed * boost * (dt / 1000);
-      const half = el.scrollWidth / 2;
       if (x <= -half) x += half;
       if (x > 0) x -= half;
       el.style.transform = `translate3d(${x}px,0,0)`;
@@ -42,6 +45,7 @@ export function Marquee({
     return () => {
       gsap.ticker.remove(tick);
       io.disconnect();
+      ro.disconnect();
     };
   }, [speed, reverse]);
   return (

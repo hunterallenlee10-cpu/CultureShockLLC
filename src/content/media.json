@@ -2502,8 +2502,8 @@
    "width": 1920,
    "height": 1080,
    "aspect": 1.7778,
-   "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAkAA4BaJQBfq+ADMt43bUnqSAD9/TKCicCmjKS7vwnlmNr4iAlHkeELcUDkZZQuTDjbVwFzgR4Ywu5nJmO2rzF1DLkha15ttMAA",
-   "source": "reel-35-football-routes-like-tyreek.mp4 @ 7.22s"
+   "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAkAA4BaJbACdAYs3vQc6DrAAP71j9Hn1ZRDM9gm8FR7wFk1++f9caha6WE415404kAE8pH8jIKiiwNhnQZEVg26xI4hGigAAA==",
+   "source": "reel-35-football-routes-like-tyreek.mp4 @ 13s"
   },
   "reel-36-still": {
    "src": "/media/img/reel-36-still",
@@ -2578,6 +2578,18 @@
      1.67,
      5.46
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-02.mp4",
+    "webm": "hl-bts-02.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 38.57,
+    "bytes": {
+     "mp4": 7045960,
+     "webm": 6675028
+    }
    }
   },
   "hl-bts-03": {
@@ -2607,6 +2619,18 @@
     "cuts": [
      5.13
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-03.mp4",
+    "webm": "hl-bts-03.webm",
+    "width": 720,
+    "height": 370,
+    "duration": 15.29,
+    "bytes": {
+     "mp4": 968969,
+     "webm": 727747
+    }
    }
   },
   "hl-bts-04": {
@@ -2634,6 +2658,18 @@
     "cuts": [
      4.54
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-04.mp4",
+    "webm": "hl-bts-04.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 60.03,
+    "bytes": {
+     "mp4": 12700802,
+     "webm": 13096800
+    }
    }
   },
   "hl-bts-05": {
@@ -2663,6 +2699,18 @@
      3.13,
      5.79
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-05.mp4",
+    "webm": "hl-bts-05.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 54.58,
+    "bytes": {
+     "mp4": 11604523,
+     "webm": 9845612
+    }
    }
   },
   "hl-bts-06": {
@@ -2690,6 +2738,18 @@
     "cuts": [
      4.71
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-06.mp4",
+    "webm": "hl-bts-06.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 50.55,
+    "bytes": {
+     "mp4": 10328073,
+     "webm": 10764483
+    }
    }
   },
   "hl-bts-07": {
@@ -2717,6 +2777,18 @@
     "cuts": [
      4.29
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-07.mp4",
+    "webm": "hl-bts-07.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 34.21,
+    "bytes": {
+     "mp4": 7713326,
+     "webm": 7108427
+    }
    }
   },
   "hl-bts-08": {
@@ -2746,6 +2818,18 @@
      3.83,
      5.5
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-bts-08.mp4",
+    "webm": "hl-bts-08.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 20.83,
+    "bytes": {
+     "mp4": 3533948,
+     "webm": 3349054
+    }
    }
   },
   "hl-sports-02": {
@@ -2777,6 +2861,18 @@
      5.54,
      5.58
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-sports-02.mp4",
+    "webm": "hl-sports-02.webm",
+    "width": 720,
+    "height": 400,
+    "duration": 44,
+    "bytes": {
+     "mp4": 8879275,
+     "webm": 9586305
+    }
    }
   },
   "hl-sports-03": {
@@ -2811,6 +2907,18 @@
      2.25,
      5.33
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-sports-03.mp4",
+    "webm": "hl-sports-03.webm",
+    "width": 720,
+    "height": 404,
+    "duration": 37.29,
+    "bytes": {
+     "mp4": 6786139,
+     "webm": 6859843
+    }
    }
   },
   "hl-sports-04": {
@@ -2845,6 +2953,18 @@
      4.67,
      5.33
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-sports-04.mp4",
+    "webm": "hl-sports-04.webm",
+    "width": 720,
+    "height": 404,
+    "duration": 27.38,
+    "bytes": {
+     "mp4": 4538300,
+     "webm": 4478604
+    }
    }
   },
   "hl-sports-05": {
@@ -2876,6 +2996,18 @@
      3.17,
      3.96
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-sports-05.mp4",
+    "webm": "hl-sports-05.webm",
+    "width": 720,
+    "height": 398,
+    "duration": 30.46,
+    "bytes": {
+     "mp4": 5078547,
+     "webm": 5308871
+    }
    }
   },
   "hl-sports-06": {
@@ -2907,6 +3039,18 @@
      3.33,
      5.63
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-sports-06.mp4",
+    "webm": "hl-sports-06.webm",
+    "width": 720,
+    "height": 398,
+    "duration": 48.25,
+    "bytes": {
+     "mp4": 9877076,
+     "webm": 11186459
+    }
    }
   },
   "hl-work-02": {
@@ -2935,6 +3079,18 @@
      2.63,
      5.33
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-02.mp4",
+    "webm": "hl-work-02.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 60.04,
+    "bytes": {
+     "mp4": 8583737,
+     "webm": 5857987
+    }
    }
   },
   "hl-work-03": {
@@ -2962,6 +3118,18 @@
     "cuts": [
      5.92
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-03.mp4",
+    "webm": "hl-work-03.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 60.04,
+    "bytes": {
+     "mp4": 4528089,
+     "webm": 3927362
+    }
    }
   },
   "hl-work-04": {
@@ -2994,6 +3162,18 @@
      3.33,
      5.33
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-04.mp4",
+    "webm": "hl-work-04.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 50.13,
+    "bytes": {
+     "mp4": 13862612,
+     "webm": 13057301
+    }
    }
   },
   "hl-work-05": {
@@ -3021,6 +3201,18 @@
     "cuts": [
      4.38
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-05.mp4",
+    "webm": "hl-work-05.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 60.04,
+    "bytes": {
+     "mp4": 9628573,
+     "webm": 8652167
+    }
    }
   },
   "hl-work-06": {
@@ -3048,6 +3240,18 @@
     "cuts": [
      2.75
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-06.mp4",
+    "webm": "hl-work-06.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 27.89,
+    "bytes": {
+     "mp4": 3427911,
+     "webm": 2453232
+    }
    }
   },
   "hl-work-07": {
@@ -3075,6 +3279,18 @@
     "cuts": [
      5.25
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-07.mp4",
+    "webm": "hl-work-07.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 33.17,
+    "bytes": {
+     "mp4": 4996773,
+     "webm": 4181887
+    }
    }
   },
   "hl-work-08": {
@@ -3103,6 +3319,18 @@
      3.29,
      5
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-08.mp4",
+    "webm": "hl-work-08.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 60.04,
+    "bytes": {
+     "mp4": 7668703,
+     "webm": 5037651
+    }
    }
   },
   "hl-work-09": {
@@ -3130,6 +3358,18 @@
     "cuts": [
      4.29
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-09.mp4",
+    "webm": "hl-work-09.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 60.04,
+    "bytes": {
+     "mp4": 14725780,
+     "webm": 14049095
+    }
    }
   },
   "hl-work-10": {
@@ -3157,6 +3397,18 @@
     "cuts": [
      2.42
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-10.mp4",
+    "webm": "hl-work-10.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 31.13,
+    "bytes": {
+     "mp4": 3275685,
+     "webm": 2630912
+    }
    }
   },
   "hl-work-11": {
@@ -3184,6 +3436,18 @@
     "cuts": [
      3.67
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "hl-work-11.mp4",
+    "webm": "hl-work-11.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 25.46,
+    "bytes": {
+     "mp4": 4185533,
+     "webm": 3376314
+    }
    }
   },
   "reel-01": {
@@ -3211,6 +3475,18 @@
     "cuts": [
      5.21
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-01.mp4",
+    "webm": "reel-01.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 33.38,
+    "bytes": {
+     "mp4": 4693179,
+     "webm": 3857728
+    }
    }
   },
   "reel-02": {
@@ -3247,6 +3523,18 @@
      5.17,
      5.5
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-02.mp4",
+    "webm": "reel-02.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 6.81,
+    "bytes": {
+     "mp4": 1533006,
+     "webm": 1524700
+    }
    }
   },
   "reel-03": {
@@ -3272,6 +3560,18 @@
      "webm": 503193
     },
     "cuts": []
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-03.mp4",
+    "webm": "reel-03.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 8.99,
+    "bytes": {
+     "mp4": 2108777,
+     "webm": 2119892
+    }
    }
   },
   "reel-04": {
@@ -3306,6 +3606,18 @@
      5.58,
      5.67
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-04.mp4",
+    "webm": "reel-04.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 54.76,
+    "bytes": {
+     "mp4": 10027015,
+     "webm": 8930087
+    }
    }
   },
   "reel-05": {
@@ -3336,6 +3648,18 @@
      3.67,
      5.33
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-05.mp4",
+    "webm": "reel-05.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 40.87,
+    "bytes": {
+     "mp4": 4834069,
+     "webm": 3585126
+    }
    }
   },
   "reel-06": {
@@ -3364,6 +3688,18 @@
      2.04,
      4.75
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-06.mp4",
+    "webm": "reel-06.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 129.38,
+    "bytes": {
+     "mp4": 11955399,
+     "webm": 8255003
+    }
    }
   },
   "reel-07": {
@@ -3393,6 +3729,18 @@
      2.75,
      4.29
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-07.mp4",
+    "webm": "reel-07.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 34.45,
+    "bytes": {
+     "mp4": 3794516,
+     "webm": 2430124
+    }
    }
   },
   "reel-08": {
@@ -3422,6 +3770,18 @@
      4,
      5.63
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-08.mp4",
+    "webm": "reel-08.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 133.21,
+    "bytes": {
+     "mp4": 16817199,
+     "webm": 12887314
+    }
    }
   },
   "reel-10": {
@@ -3450,6 +3810,18 @@
      2.54,
      3.83
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-10.mp4",
+    "webm": "reel-10.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 78.2,
+    "bytes": {
+     "mp4": 29436670,
+     "webm": 32360890
+    }
    }
   },
   "reel-11": {
@@ -3478,6 +3850,18 @@
      3.25,
      4.54
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-11.mp4",
+    "webm": "reel-11.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 69.79,
+    "bytes": {
+     "mp4": 9163709,
+     "webm": 6749559
+    }
    }
   },
   "reel-12": {
@@ -3505,6 +3889,18 @@
     "cuts": [
      5.83
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-12.mp4",
+    "webm": "reel-12.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 20.41,
+    "bytes": {
+     "mp4": 1014307,
+     "webm": 658860
+    }
    }
   },
   "reel-13": {
@@ -3530,6 +3926,18 @@
      "webm": 310619
     },
     "cuts": []
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-13.mp4",
+    "webm": "reel-13.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 45.38,
+    "bytes": {
+     "mp4": 4568376,
+     "webm": 2925284
+    }
    }
   },
   "reel-14": {
@@ -3557,6 +3965,18 @@
     "cuts": [
      5.67
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-14.mp4",
+    "webm": "reel-14.webm",
+    "width": 720,
+    "height": 958,
+    "duration": 82.83,
+    "bytes": {
+     "mp4": 15667448,
+     "webm": 14701813
+    }
    }
   },
   "reel-16": {
@@ -3586,6 +4006,18 @@
      2.96,
      5.83
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-16.mp4",
+    "webm": "reel-16.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 207.08,
+    "bytes": {
+     "mp4": 28855601,
+     "webm": 22894209
+    }
    }
   },
   "reel-17": {
@@ -3623,6 +4055,18 @@
      5.21,
      5.42
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-17.mp4",
+    "webm": "reel-17.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 17.87,
+    "bytes": {
+     "mp4": 2816286,
+     "webm": 2179035
+    }
    }
   },
   "reel-18": {
@@ -3658,6 +4102,18 @@
      4.75,
      5.75
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-18.mp4",
+    "webm": "reel-18.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 15.68,
+    "bytes": {
+     "mp4": 2879829,
+     "webm": 2354139
+    }
    }
   },
   "reel-19": {
@@ -3683,6 +4139,18 @@
      "webm": 422500
     },
     "cuts": []
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-19.mp4",
+    "webm": "reel-19.webm",
+    "width": 720,
+    "height": 960,
+    "duration": 30.93,
+    "bytes": {
+     "mp4": 5505466,
+     "webm": 4262001
+    }
    }
   },
   "reel-20": {
@@ -3713,6 +4181,18 @@
      1.96,
      5.79
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-20.mp4",
+    "webm": "reel-20.webm",
+    "width": 720,
+    "height": 400,
+    "duration": 59.88,
+    "bytes": {
+     "mp4": 5997168,
+     "webm": 5794277
+    }
    }
   },
   "reel-22": {
@@ -3742,6 +4222,18 @@
     "cuts": [
      4.96
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-22.mp4",
+    "webm": "reel-22.webm",
+    "width": 1080,
+    "height": 610,
+    "duration": 26.04,
+    "bytes": {
+     "mp4": 2331433,
+     "webm": 1634322
+    }
    }
   },
   "reel-23": {
@@ -3769,6 +4261,18 @@
     "cuts": [
      2.58
     ]
+   },
+   "full": {
+    "location": "public",
+    "mp4": "/media/full/reel-23.mp4",
+    "webm": null,
+    "width": 1080,
+    "height": 608,
+    "duration": 82.58,
+    "bytes": {
+     "mp4": 16784907,
+     "webm": 18556763
+    }
    }
   },
   "reel-24": {
@@ -3799,6 +4303,18 @@
      3.29,
      4.71
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-24.mp4",
+    "webm": "reel-24.webm",
+    "width": 1080,
+    "height": 610,
+    "duration": 123.75,
+    "bytes": {
+     "mp4": 43219007,
+     "webm": 43010079
+    }
    }
   },
   "reel-25": {
@@ -3826,6 +4342,18 @@
     "cuts": [
      2.29
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-25.mp4",
+    "webm": "reel-25.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 75.21,
+    "bytes": {
+     "mp4": 16279401,
+     "webm": 13600677
+    }
    }
   },
   "reel-27": {
@@ -3853,6 +4381,18 @@
     "cuts": [
      2.79
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-27.mp4",
+    "webm": "reel-27.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 8.33,
+    "bytes": {
+     "mp4": 801691,
+     "webm": 750476
+    }
    }
   },
   "reel-28": {
@@ -3881,6 +4421,18 @@
      3.25,
      5.04
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-28.mp4",
+    "webm": "reel-28.webm",
+    "width": 608,
+    "height": 1080,
+    "duration": 233.04,
+    "bytes": {
+     "mp4": 29672959,
+     "webm": 21221871
+    }
    }
   },
   "reel-30": {
@@ -3915,6 +4467,18 @@
      4.67,
      5.33
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-30.mp4",
+    "webm": "reel-30.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 27.38,
+    "bytes": {
+     "mp4": 9148747,
+     "webm": 9269743
+    }
    }
   },
   "reel-31": {
@@ -3944,6 +4508,18 @@
     "cuts": [
      5.75
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-31.mp4",
+    "webm": "reel-31.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 27.88,
+    "bytes": {
+     "mp4": 8205604,
+     "webm": 9042531
+    }
    }
   },
   "reel-32": {
@@ -3975,6 +4551,18 @@
      3.33,
      5.63
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-32.mp4",
+    "webm": "reel-32.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 47.88,
+    "bytes": {
+     "mp4": 15887266,
+     "webm": 16086780
+    }
    }
   },
   "reel-33": {
@@ -4006,6 +4594,18 @@
      3.17,
      3.96
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-33.mp4",
+    "webm": "reel-33.webm",
+    "width": 720,
+    "height": 400,
+    "duration": 30.42,
+    "bytes": {
+     "mp4": 6003750,
+     "webm": 6714330
+    }
    }
   },
   "reel-34": {
@@ -4033,6 +4633,18 @@
      "webm": 490412
     },
     "cuts": []
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-34.mp4",
+    "webm": "reel-34.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 22.46,
+    "bytes": {
+     "mp4": 5137902,
+     "webm": 4739498
+    }
    }
   },
   "reel-35": {
@@ -4052,21 +4664,28 @@
     "poster": "/media/loops/reel-35.jpg",
     "width": 960,
     "height": 540,
-    "start": 7.22,
-    "duration": 6.04,
-    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkAA4BaJZgAAsXzWigAAP7MLzukoXk7K74wXe2rDVb5IrKT1WrdeJDKZOph55K50cFDlpEI35oxdSVG/rLlA//el22JLBAAAA==",
+    "start": 13,
+    "duration": 6,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkAA4BaJagCdAEQ/LFQhQAA/uzhu10RKRoFUUZhpcRAP4mEePsg0XoQCrdX6cGWXMBfVLP52ui1oCYsFpTWOPDvsmbTHUAAAA==",
     "bytes": {
-     "mp4": 567601,
-     "webm": 456742
+     "mp4": 641599,
+     "webm": 493328
     },
     "cuts": [
-     0.17,
-     0.29,
-     0.75,
-     1.08,
-     2.25,
-     5.33
+     1.46
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-35.mp4",
+    "webm": "reel-35.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 37.25,
+    "bytes": {
+     "mp4": 17920690,
+     "webm": 17559477
+    }
    }
   },
   "reel-36": {
@@ -4098,11 +4717,23 @@
      5.54,
      5.58
     ]
+   },
+   "full": {
+    "location": "blob",
+    "mp4": "reel-36.mp4",
+    "webm": "reel-36.webm",
+    "width": 1080,
+    "height": 608,
+    "duration": 44,
+    "bytes": {
+     "mp4": 19565280,
+     "webm": 20435592
+    }
    }
   }
  },
- "generatedAt": "2026-11-09T19:40:54.939Z",
- "publicBytes": 96942559,
+ "generatedAt": "2026-11-09T20:29:33.054Z",
+ "publicBytes": 113828430,
  "hero": {
   "desktop": {
    "hero-1280.mp4": {

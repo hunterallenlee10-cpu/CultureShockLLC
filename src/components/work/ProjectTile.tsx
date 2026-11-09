@@ -20,7 +20,6 @@ export function ProjectTile({ p, index, hidden, image }: { p: Project; index: nu
         data-cursor={isVideo ? 'play' : 'view'}
         data-cursor-label={isVideo ? 'PLAY ▶' : 'VIEW ↗'}
         className="group relative block h-full w-full overflow-hidden rounded-[4px] bg-ink"
-        aria-label={`${p.title} — view case study`}
       >
         <div data-vt-source className="absolute inset-0">
           {isVideo ? (
@@ -45,7 +44,7 @@ export function ProjectTile({ p, index, hidden, image }: { p: Project; index: nu
           className="absolute inset-0 rounded-[4px] ring-0 ring-gold transition-[box-shadow] duration-300 group-hover:ring-2 group-focus-visible:ring-2"
         />
 
-        <div className="absolute inset-x-0 top-0 flex items-start justify-between gap-2 p-3 md:p-4">
+        <div aria-hidden className="absolute inset-x-0 top-0 flex items-start justify-between gap-2 p-3 md:p-4">
           <span className="mono rounded-sm bg-black/60 px-2 py-1 text-[10px] text-gold backdrop-blur-sm md:text-[11px]">
             {String(index + 1).padStart(2, '0')} / {p.categories[0]}
           </span>
@@ -68,6 +67,7 @@ export function ProjectTile({ p, index, hidden, image }: { p: Project; index: nu
           <p className="mono mt-1.5 text-[10px] text-paper/55 md:text-[11px]">
             {p.year}
             {p.location ? ` · ${p.location}` : ''}
+            <span className="sr-only"> — view case study</span>
           </p>
         </div>
       </TransitionLink>

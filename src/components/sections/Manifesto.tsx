@@ -87,7 +87,13 @@ export function Manifesto() {
           className="mx-auto mt-14 max-w-[24ch] text-center font-medium leading-[1.12] tracking-[-0.02em] text-[clamp(30px,4.6vw,66px)] md:max-w-[26ch]"
         >
           {list.map(({ w, gold }, i) => (
-            <span key={i} data-w data-gold={gold ? '' : undefined} className={gold ? 'italic' : ''} style={{ color: '#3a3936' }}>
+            <span
+              key={i}
+              data-w
+              data-gold={gold ? '' : undefined}
+              className={gold ? 'italic' : ''}
+              style={{ color: '#6f6b64' }} /* unrevealed: still ≥3:1 for large text */
+            >
               {w}{' '}
             </span>
           ))}

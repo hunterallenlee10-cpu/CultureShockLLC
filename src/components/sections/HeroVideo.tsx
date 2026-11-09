@@ -121,8 +121,13 @@ export function HeroVideo() {
           },
         });
         const mesh = new Mesh(gl, { geometry: new Triangle(gl), program });
+        // Cache geometry on resize; the render loop must not force layout every frame.
+        let hostTop = 0;
+        let hostH = 1;
         const resize = () => {
           const r = host.current!.getBoundingClientRect();
+          hostTop = r.top + window.scrollY;
+          hostH = r.height;
           renderer.setSize(r.width, r.height);
           program.uniforms.uRes.value = [r.width, r.height];
         };
@@ -143,8 +148,7 @@ export function HeroVideo() {
           vel += (Math.min(1, Math.abs(store.velocity.current) / 45) - vel) * 0.12;
           program.uniforms.uVel.value = vel;
           program.uniforms.uTime.value = t / 1000;
-          const rect = host.current!.getBoundingClientRect();
-          program.uniforms.uFade.value = Math.max(0.25, 1 - Math.max(0, -rect.top) / rect.height);
+          program.uniforms.uFade.value = Math.max(0.25, 1 - Math.max(0, window.scrollY - hostTop) / hostH);
           if (video.readyState >= video.HAVE_CURRENT_DATA) {
             texture.image = video;
             texture.needsUpdate = true;
