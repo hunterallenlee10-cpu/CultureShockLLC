@@ -1,0 +1,9 @@
+node_modules/
+.next/
+assets-raw/
+media-full/
+qa/
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+.vercel
