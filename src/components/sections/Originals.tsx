@@ -149,7 +149,7 @@ export function Originals() {
                   >
                     {/* CRT set */}
                     <div
-                      className={`relative shrink-0 rounded-[28px] bg-gradient-to-b from-[#2a2630] to-[#121015] p-[14px] pb-[46px] shadow-[0_40px_80px_rgba(0,0,0,.6),inset_0_1px_0_rgba(255,255,255,.08)] transition-transform duration-700 ${on ? 'scale-100' : 'scale-[.92]'} ${e.lead ? 'h-[min(62vh,620px)] max-md:h-[64vh]' : 'h-[min(54vh,540px)] max-md:h-[60vh]'} aspect-[3/4.15]`}
+                      className={`relative shrink-0 rounded-[28px] bg-gradient-to-b from-[#2a2630] to-[#121015] p-[14px] pb-[46px] shadow-[0_40px_80px_rgba(0,0,0,.6),inset_0_1px_0_rgba(255,255,255,.08)] transition-transform duration-700 ${on ? 'scale-100' : 'scale-[.92]'} ${e.lead ? 'h-[min(62vh,620px)] max-md:h-auto max-md:w-[78vw]' : 'h-[min(54vh,540px)] max-md:h-auto max-md:w-[72vw]'} aspect-[3/4.15]`}
                     >
                       <div className="relative h-full overflow-hidden rounded-[22px/30px] bg-black shadow-[inset_0_0_40px_rgba(0,0,0,.9)]">
                         {v && (

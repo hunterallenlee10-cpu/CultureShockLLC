@@ -45,14 +45,16 @@ for (const vp of VIEWPORTS) {
   await page.screenshot({ path: `${dir}/01-hero.png` });
 
   const sections = await page.evaluate(() =>
-    [...document.querySelectorAll('main > section, main > div > .pin-spacer > section, main > .pin-spacer > section, main > div[data-channel], main > footer')].map(
-      (el, i) => ({
-        i,
-        name: (el.getAttribute('data-segment') || el.id || el.tagName).toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-        top: el.getBoundingClientRect().top + window.scrollY,
-        height: el.getBoundingClientRect().height,
-      }),
-    ),
+    [
+      ...document.querySelectorAll(
+        'main > section, main > div > section, main > div > .pin-spacer > section, main > div[data-channel], main > footer',
+      ),
+    ].map((el, i) => ({
+      i,
+      name: (el.getAttribute('data-segment') || el.id || el.tagName).toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      top: el.getBoundingClientRect().top + window.scrollY,
+      height: el.getBoundingClientRect().height,
+    })),
   );
   let n = 2;
   for (const s of sections.slice(1)) {
